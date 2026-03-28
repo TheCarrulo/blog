@@ -3,7 +3,7 @@ backend:
   repo: thecarrulo/blog
   branch: master
   auth_type: pkce
-  app_id: SUBSTITUI_PELO_CLIENT_ID
+  app_id: Ov23liyN9UX9AhHLrk8B
 
 media_folder: public/images
 public_folder: /blog/images
