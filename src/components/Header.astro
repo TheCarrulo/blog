@@ -1,0 +1,14 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
+<header>
+  <div class="container header-inner">
+    <a href={base} class="site-title">Carrulo in Bytes</a>
+    <nav>
+      <a href={`${base}tags/`}>Tags</a>
+      <a href={`${base}pesquisa/`}>Pesquisa</a>
+      <a href={`${base}rss.xml`} title="Feed RSS" aria-label="Feed RSS">RSS</a>
+    </nav>
+  </div>
+</header>
