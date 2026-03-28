@@ -8,40 +8,18 @@ backend:
 media_folder: public/images
 public_folder: /blog/images
 
-locale: pt
-
 collections:
   - name: posts
     label: Posts
-    label_singular: Post
     folder: src/content/posts
     create: true
     slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - label: Título
-        name: title
-        widget: string
-      - label: Descrição
-        name: description
-        widget: text
-      - label: Data de publicação
-        name: pubDate
-        widget: datetime
-        format: "YYYY-MM-DD"
-        date_format: "DD/MM/YYYY"
-        time_format: false
-        default: ""
-      - label: Tags
-        name: tags
-        widget: list
-        default: []
-      - label: Rascunho
-        name: draft
-        widget: boolean
-        default: false
-        required: false
-      - label: Conteúdo
-        name: body
-        widget: markdown
+      - { label: Título, name: title, widget: string }
+      - { label: Descrição, name: description, widget: text }
+      - { label: Data, name: pubDate, widget: datetime, format: "YYYY-MM-DD", time_format: false }
+      - { label: Tags, name: tags, widget: list, default: [] }
+      - { label: Rascunho, name: draft, widget: boolean, default: false, required: false }
+      - { label: Conteúdo, name: body, widget: markdown }
